@@ -2723,10 +2723,10 @@ CGPathRef _Nullable LEECGPathCreateWithRoundedRect(CGRect bounds, CornerRadii co
         
         if (!action.titleColor) {
             if (@available(iOS 13.0, *)) {
-                action.titleColor = [UIColor systemBlueColor];
+                action.titleColor = [UIColor colorWithRed:255/255.0f green:114/255.0f blue:0/255.0f alpha:1.0f];
                 
             } else {
-                action.titleColor = [UIColor colorWithRed:21/255.0f green:123/255.0f blue:245/255.0f alpha:1.0f];
+                action.titleColor = [UIColor colorWithRed:255/255.0f green:114/255.0f blue:0/255.0f alpha:1.0f];
             }
         }
         
@@ -4190,7 +4190,7 @@ CGPathRef _Nullable LEECGPathCreateWithRoundedRect(CGRect bounds, CornerRadii co
         self.config
         .LeeConfigMaxWidth(^CGFloat(LEEScreenOrientationType type, CGSize size) {
             
-            return 280.0f;
+            return 361.0f;
         })
         .LeeConfigMaxHeight(^CGFloat(LEEScreenOrientationType type, CGSize size) {
            
